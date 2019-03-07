@@ -1,32 +1,7 @@
-import VueCookies from 'vue-cookies'
+import {get_code, put_code, post_code} from "./common";
 
-let host = 'http://127.0.0.1:8000/';
 
-let post_code = function (url, params) {
-  let body = JSON.stringify(params);
-  return fetch(host + url, {
-    method: 'POST',
-    body: body,
-    credentials: "include",
-    headers: {
-      'token': VueCookies.get('token'),
-    }
-  }).then(response =>{
-    return response.json()
-  })
-};
-
-let get_code = function(url) {
-  return fetch(host + url, {
-    method: 'GET',
-    credentials: "include",
-    headers: {
-      'token': VueCookies.get('token'),
-    }
-  }).then(response => {
-    return response.json()
-  })
-};
+const user_path = "/backend/user/";
 
 export const register = function(name, pwd){
   return post_code('backend/user/register', {name: name, pwd: pwd})
