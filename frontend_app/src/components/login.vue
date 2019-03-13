@@ -25,7 +25,7 @@
 
     export default {
         name: "login",
-      data() {
+        data() {
           return {
             rule_form: {
               name: "",
@@ -62,7 +62,7 @@
               }
             });
           },
-        register() {
+        register () {
             this.$refs.ruleForm.validate((valid) => {
               if (valid) {
                 register(this.rule_form.name, this.rule_form.pwd).then(data => {

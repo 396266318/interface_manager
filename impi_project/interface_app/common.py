@@ -25,3 +25,5 @@ def response_success(data={}):
 def response_failed(message):
 	"""接收 message 参数返回失败信息"""
 	return response_json(False, message, {})
+
+# logger = loggin.

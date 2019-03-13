@@ -1,0 +1,32 @@
+2019-03-13 10:40:47,226 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "OPTIONS /backend/user/get HTTP/1.1" 200 0
+2019-03-13 10:40:47,271 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/get
+2019-03-13 10:40:47,272 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/get HTTP/1.1" 404 2466
+2019-03-13 10:40:55,223 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/get
+2019-03-13 10:40:55,226 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/get HTTP/1.1" 404 2466
+2019-03-13 10:41:12,034 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/get
+2019-03-13 10:41:12,035 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/get HTTP/1.1" 404 2466
+2019-03-13 10:41:21,690 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/get
+2019-03-13 10:41:21,691 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/get HTTP/1.1" 404 2466
+2019-03-13 10:41:47,292 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "OPTIONS /backend/user/login HTTP/1.1" 200 0
+2019-03-13 10:41:47,298 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/login
+2019-03-13 10:41:47,299 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/login HTTP/1.1" 404 2473
+2019-03-13 10:41:55,638 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/login
+2019-03-13 10:41:55,639 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/login HTTP/1.1" 404 2472
+2019-03-13 10:41:55,835 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /favicon.ico
+2019-03-13 10:41:55,837 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /favicon.ico HTTP/1.1" 404 2451
+2019-03-13 10:49:22,813 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "OPTIONS /backend/user/register HTTP/1.1" 200 0
+2019-03-13 10:49:22,831 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/register
+2019-03-13 10:49:22,832 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/register HTTP/1.1" 404 2370
+2019-03-13 10:51:09,327 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/register
+2019-03-13 10:51:09,328 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/register HTTP/1.1" 404 2370
+2019-03-13 10:51:10,950 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/register
+2019-03-13 10:51:10,951 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/register HTTP/1.1" 404 2370
+2019-03-13 10:57:02,586 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/register
+2019-03-13 10:57:02,587 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/register HTTP/1.1" 404 2370
+2019-03-13 10:57:36,255 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/register
+2019-03-13 10:57:36,256 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/register HTTP/1.1" 404 2370
+2019-03-13 11:26:21,671 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "OPTIONS /backend/user/register HTTP/1.1" 200 0
+2019-03-13 11:26:21,684 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/register
+2019-03-13 11:26:21,688 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/register HTTP/1.1" 404 2370
+2019-03-13 11:28:16,319 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend/user/register
+2019-03-13 11:28:16,322 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/register HTTP/1.1" 404 2370

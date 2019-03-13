@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from interface_app.views import user_views
+from interface_app.views.service.service_detail_views import ServiceDatailViews
+from interface_app.views.service.service_list_views import ServiceListViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('backend/user/register', user_views.register_user),
-    # path('backend/user/login', user_views.login_user),
-    # path('backend/user/get', user_views.get_user),
-    path('backend/user', user_views.UserViews.as_view()),
+    path('backend/user/', user_views.UserViews.as_view()),
+    path('backend/services/', ServiceListViews.as_view()),
+    path('backend/services/<int:pk>', ServiceDatailViews.as_view()),
 ]

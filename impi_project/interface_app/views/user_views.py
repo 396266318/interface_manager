@@ -7,7 +7,6 @@ import json
 from django.contrib.sessions.models import Session
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
-from django.http import HttpResponse
 from interface_app import common
 from interface_app.form.user import UserForm
 
@@ -18,6 +17,7 @@ from interface_app.my_exception import MyException
 class UserViews(View):
 
 	def get(self, request, *args, **kwargs):
+		"""获取单个服务"""
 		token = request.META.get('HTTP_TOKEN', None)
 		if token is None:
 			raise MyException("用户未登录")
@@ -37,7 +37,9 @@ class UserViews(View):
 				else:
 					return common.response_success({"user": user.username, "id": user.id})
 
+
 	def post(self, request, *args, **kwargs):
+		"""单个服务"""
 		body = request.body
 		params = json.loads(body)
 		form = UserForm(params)
@@ -60,6 +62,7 @@ class UserViews(View):
 
 
 	def put(self, request, *args, **kwargs):
+		"""更新单个服务"""
 		body = request.body
 		params = json.loads(body)
 		form = UserForm(params)
