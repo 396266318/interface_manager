@@ -4,6 +4,7 @@ author: Xuan
 time: 2019-02-18 21:34
 """
 import json
+import logging
 from django.http import JsonResponse
 
 
@@ -22,8 +23,8 @@ def response_success(data={}):
 	return response_json(True, "", data)
 
 
-def response_failed(message):
+def response_failed(message="参数错误"):
 	"""接收 message 参数返回失败信息"""
 	return response_json(False, message, {})
 
-# logger = loggin.
+logger = logging.getLogger(__name__)

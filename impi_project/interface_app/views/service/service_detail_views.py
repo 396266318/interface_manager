@@ -6,7 +6,7 @@ version: 3.7
 @file: service_detail_views.py
 """
 import json
-from django.forms.models import  model_to_dict
+from django.forms.models import model_to_dict
 from interface_app import common
 from interface_app.form.service import ServiceForm
 from interface_app.models.service import Service

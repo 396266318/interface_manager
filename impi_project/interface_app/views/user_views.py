@@ -35,7 +35,7 @@ class UserViews(View):
 				except User.DoesNotExist:
 					raise MyException("用户不存在")
 				else:
-					return common.response_success({"user": user.username, "id": user.id})
+					return common.response_success({"username": user.username, "id": user.id})
 
 
 	def post(self, request, *args, **kwargs):
@@ -59,7 +59,6 @@ class UserViews(View):
 		else:
 			print(form.errors.as_json())
 			raise MyException()
-
 
 	def put(self, request, *args, **kwargs):
 		"""更新单个服务"""

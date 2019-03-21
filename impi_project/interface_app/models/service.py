@@ -7,11 +7,12 @@ version: 3.7
 """
 
 from django.db import models
+from interface_app.models.base import Base
 
 IS_ROOT = 0
 
 
-class Service(models.Model):
+class Service(models.Model, Base):
     name = models.CharField("name", blank=False, default="", max_length=200)
     description = models.TextField("description", blank=True, default="")
     parent = models.IntegerField("父节点", blank=False, default=IS_ROOT)
