@@ -25,9 +25,10 @@ class Interface(models.Model, Base):
     response = models.TextField('response', default="")
     response_type = models.CharField('response_type, json or html', default="json", max_length=20)
 
-    service = models.ForeignKey(Service, blank=False, related_name='service_interfaces', on_delete=models.SET_NULL)
+    service = models.ForeignKey(Service, blank=False, related_name='service_interfaces', on_delete=models.SET_DEFAULT,
+                                default=0)
 
-    asserts = ObjectField('asserts', default={})
+    asserts = ObjectField('asserts', default=[])
 
     def __str__(self):
         return self.name

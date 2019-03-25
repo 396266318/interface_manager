@@ -37,7 +37,6 @@ class UserViews(View):
 				else:
 					return common.response_success({"username": user.username, "id": user.id})
 
-
 	def post(self, request, *args, **kwargs):
 		"""单个服务"""
 		body = request.body

@@ -13,8 +13,10 @@ from interface_app.models.service import Service
 from django.views.generic import View
 from interface_app.my_exception import MyException
 
+# service 的单个获取, 删除, 修改的接口
 
-class ServiceDatailViews(View):
+
+class ServiceDetailViews(View):
 
     def get(self, request, pk, *args, **kwargs):
         """获取单个服务
@@ -31,7 +33,7 @@ class ServiceDatailViews(View):
         """ 更新单个服务 """
         body = request.body
         params = json.loads(body)
-        form = ServiceForm(params)
+        form = ServiceForm(params)  # 参数校验
         result = form.is_valid()
 
         if result:
