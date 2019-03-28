@@ -92,3 +92,11 @@
 2019-03-22 14:59:31,167 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/ HTTP/1.1" 200 69
 2019-03-22 15:22:40,269 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "OPTIONS /backend/user/ HTTP/1.1" 200 0
 2019-03-22 15:22:40,286 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/ HTTP/1.1" 200 69
+2019-03-25 20:27:40,039 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "OPTIONS /backend/user/ HTTP/1.1" 200 0
+2019-03-25 20:27:40,211 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/ HTTP/1.1" 200 64
+2019-03-25 20:28:00,448 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "OPTIONS /backend/user/ HTTP/1.1" 200 0
+2019-03-25 20:28:00,461 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/ HTTP/1.1" 200 69
+2019-03-25 20:29:07,382 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/ HTTP/1.1" 200 64
+2019-03-25 20:29:24,132 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/ HTTP/1.1" 200 64
+2019-03-25 20:29:30,036 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/ HTTP/1.1" 200 69
+2019-03-25 20:29:35,693 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/ HTTP/1.1" 200 69

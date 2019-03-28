@@ -24,10 +24,10 @@ from interface_app.views.service.service_interface_detail_views import ServiceIn
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('backend/user/', user_views.UserViews.as_view()),
+    path('backend/user/', user_views.UserViews.as_view(), name="backend/user/"),
 
-    path('backend/services/', ServiceListViews.as_view()),
-    path('backend/services/<int:pk>', ServiceDetailViews.as_view()),
+    path('backend/services/', ServiceListViews.as_view(), name="backend/services/"),
+    path('backend/services/<int:pk>', ServiceDetailViews.as_view(), name="backend/services/<int:pk>"),
     path('backend/services/<int:pk>/interfaces', ServiceInterfaceDetailViews.as_view()),
 
     path('backend/interfaces/', InterfaceListViews.as_view()),
