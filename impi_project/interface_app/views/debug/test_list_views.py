@@ -1,0 +1,68 @@
+# -*- encoding: utf-8 -*-
+"""
+version: 3.7
+@time:  16:22
+@author: xuanyue
+@file: test_list_views.py
+"""
+import json
+from django.views.generic import View
+
+from interface_app import common
+from interface_app.form.debug import DebugForm
+from interface_app.utils.interface_utils import InterfaceUtils
+
+# 用户测试的接口
+
+class TestListViews(View):
+    def post(self, request, *args, **kwargs):
+        """
+        测试的 post请求
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
+        body = request.body
+        print(request.body)
+        params = json.loads(body)
+        test = params.get('test', None)
+        print(params)
+        if test is not None:
+            return common.response_success(params)
+        else:
+            return common.response_failed()
+
+    def put(self, request, *args, **kwargs):
+        """
+        测试的 put 请求
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
+        body = request.body
+        params = json.loads(body)
+        test = params.get("test", None)
+        print(params)
+        if test is not None:
+            return common.response_success(params)
+        else:
+            return common.response_failed()
+
+    def delete(self, request, *args, **kwargs):
+        """
+        测试的 delete 请求
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
+        body = request.body
+        params = json.loads(body)
+        test = params.get("test", None)
+        print(params)
+        if test is not  None:
+            return common.response_success(params)
+        else:
+            return common.response_failed()

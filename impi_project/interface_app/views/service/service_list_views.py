@@ -5,7 +5,6 @@ version: 3.7
 @author: xuanyue
 @file: service_list_views.py
 """
-
 import json
 from interface_app import common
 from interface_app.form.service import ServiceForm
@@ -14,7 +13,6 @@ from interface_app.utils.service_utils import ServiceUtils
 
 from django.views.generic import View
 from interface_app.my_exception import MyException
-
 # service 的列表获取和创建的接口
 
 

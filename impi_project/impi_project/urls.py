@@ -21,15 +21,28 @@ from interface_app.views.service.service_list_views import ServiceListViews
 from interface_app.views.interface.interface_list_views import InterfaceListViews
 from interface_app.views.interface.interface_detail_views import InterfaceDetailViews
 from interface_app.views.service.service_interface_detail_views import ServiceInterfaceDetailViews
+from interface_app.views.debug.debug_list_views import DebugListViews
+from interface_app.views.debug.test_list_views import TestListViews
+from interface_app.views.task.task_detail_views import TaskDetailViews
+from interface_app.views.task.list_views import TaskListViews
+from interface_app.views.task.task_detail_interfaces_views import TaskDetailInterfacesViews
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('backend/user/', user_views.UserViews.as_view(), name="backend/user/"),
+    path('backend/user/', user_views.UserViews.as_view(), name="user"),
 
-    path('backend/services/', ServiceListViews.as_view(), name="backend/services/"),
-    path('backend/services/<int:pk>', ServiceDetailViews.as_view(), name="backend/services/<int:pk>"),
-    path('backend/services/<int:pk>/interfaces', ServiceInterfaceDetailViews.as_view()),
+    path('backend/services/', ServiceListViews.as_view(), name="services"),
+    path('backend/services/<int:pk>', ServiceDetailViews.as_view(), name="services"),
+    path('backend/services/<int:pk>/interfaces', ServiceInterfaceDetailViews.as_view(), name="services-interfaces"),
 
-    path('backend/interfaces/', InterfaceListViews.as_view()),
-    path('backend/interfaces/<int:pk>', InterfaceDetailViews.as_view()),
+    path('backend/interfaces/', InterfaceListViews.as_view(), name="interfaces"),
+    path('backend/interfaces/<int:pk>', InterfaceDetailViews.as_view(), name="backend_interfaces"),
+
+    path('backend/debug/', DebugListViews.as_view(), name="debug"),
+    path('backend/test/<int:pk>', TestListViews.as_view(), name="test"),
+
+    path('backend/tasks/', TaskListViews.as_views(), name="tasks"),
+    path('backend/tasks/<int:pk>', TaskDetailViews.as_views(), name="backend_tasks"),
+    path('backend/tasks/<int:pk>/interfaces', TaskDetailInterfacesViews.as_views(), name="tasks_interfaces"),
 ]

@@ -15,15 +15,22 @@ class ObjectField(forms.Field):
 
 
     def to_python(self, value):
+        """数据从model 读进来时进行处理"""
         if value is None:
+            return dict()
+        if isinstance(value, dict) or isinstance(value, list):
             return value
         try:
             ret = json.loads(value)
         except Exception:
-            return None
+            return dict()
         else:
             return ret
 
     def validate(self, value):
-        if not isinstance(value, dict) or not isinstance(value, list):
-            raise forms.ValidationError("格式正确")
+        """数据从前端请求进来时进行数据校验"""
+        if self.required:
+            if not isinstance(value, dict) or not isinstance(value, list):
+                raise forms.ValidationError("格式正确")
+        else:
+            return self.to_python(value)

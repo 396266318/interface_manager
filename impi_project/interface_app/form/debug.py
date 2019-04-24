@@ -1,0 +1,21 @@
+# -*- encoding: utf-8 -*-
+"""
+version: 3.7
+@time:  14:13
+@author: xuanyue
+@file: debug.py
+"""
+from django import forms
+from interface_app.fields.form.object_field import ObjectField
+
+
+class DebugForm(forms.form):
+    """
+    调试功能的参数检验
+    """
+
+    url = forms.CharField(max_length=500, required=True)
+    method = forms.CharField(max_length=20, required=True)
+    header = ObjectField(required=False)
+    parameter = ObjectField(required=False)
+    parameter_type = forms.CharField(required=False)
