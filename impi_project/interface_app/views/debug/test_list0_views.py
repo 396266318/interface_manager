@@ -1,23 +1,22 @@
 # -*- encoding: utf-8 -*-
 """
 version: 3.7
-@time:  16:22
+@time:  17:38
 @author: xuanyue
-@file: test_list_views.py
+@file: test_list0_views.py
 """
 import json
 from django.views.generic import View
-
 from interface_app import common
 from interface_app.form.debug import DebugForm
 from interface_app.utils.interface_utils import InterfaceUtils
 
-# 用户测试的接口
 
-class TestListViews(View):
+# 用户测试的接口
+class TestList0Views(View):
     def post(self, request, *args, **kwargs):
         """
-        测试的 post请求
+        测试的 post
         :param request:
         :param args:
         :param kwargs:
@@ -26,8 +25,7 @@ class TestListViews(View):
         body = request.body
         print(request.body)
         params = json.loads(body)
-        test = params.get('test', None)
-        print(params)
+        test = params.get("test", None)
         if test is not None:
             return common.response_success(params)
         else:
@@ -35,7 +33,7 @@ class TestListViews(View):
 
     def put(self, request, *args, **kwargs):
         """
-        测试的 put 请求
+        测试的put 请求
         :param request:
         :param args:
         :param kwargs:
@@ -44,7 +42,6 @@ class TestListViews(View):
         body = request.body
         params = json.loads(body)
         test = params.get("test", None)
-        print(params)
         if test is not None:
             return common.response_success(params)
         else:
@@ -52,7 +49,7 @@ class TestListViews(View):
 
     def delete(self, request, *args, **kwargs):
         """
-        测试的 delete 请求
+        测试 delete 请求
         :param request:
         :param args:
         :param kwargs:
@@ -61,8 +58,7 @@ class TestListViews(View):
         body = request.body
         params = json.loads(body)
         test = params.get("test", None)
-        print(params)
-        if test is not  None:
+        if test is not None:
             return common.response_success(params)
         else:
             return common.response_failed()
