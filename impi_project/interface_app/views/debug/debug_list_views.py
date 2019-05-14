@@ -14,7 +14,7 @@ from interface_app.utils.interface_utils import InterfaceUtils
 
 # 调试功能接口
 
-class DebugLIstViews(View):
+class DebugListViews(View):
     def post(self, request, *args, **kwargs):
         """
         创建接口

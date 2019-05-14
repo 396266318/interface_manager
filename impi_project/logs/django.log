@@ -100,3 +100,15 @@
 2019-03-25 20:29:24,132 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend/user/ HTTP/1.1" 200 64
 2019-03-25 20:29:30,036 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/ HTTP/1.1" 200 69
 2019-03-25 20:29:35,693 INFO     C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "POST /backend/user/ HTTP/1.1" 200 69
+2019-05-14 16:22:38,130 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /
+2019-05-14 16:22:38,245 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET / HTTP/1.1" 404 4403
+2019-05-14 16:22:38,741 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /favicon.ico
+2019-05-14 16:22:38,741 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /favicon.ico HTTP/1.1" 404 4454
+2019-05-14 16:22:53,820 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /backend
+2019-05-14 16:22:53,821 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /backend HTTP/1.1" 404 4442
+2019-05-14 16:23:00,544 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /tasks
+2019-05-14 16:23:00,545 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /tasks HTTP/1.1" 404 4436
+2019-05-14 16:23:09,696 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /task
+2019-05-14 16:23:09,697 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /task HTTP/1.1" 404 4433
+2019-05-14 16:23:25,426 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\utils\log.py[line:228] Not Found: /user
+2019-05-14 16:23:25,426 WARNING  C:\Users\Administrator\.virtualenvs\interface_manager-WnB1EhMP\lib\site-packages\django\core\servers\basehttp.py[line:154] "GET /user HTTP/1.1" 404 4433

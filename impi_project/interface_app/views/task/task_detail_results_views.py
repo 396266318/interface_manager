@@ -16,7 +16,8 @@ from interface_app.my_exception import MyException
 
 # task 接口的增删改查
 
-class TaskDetilVersionViews(View):
+class TaskDetailVersionViews(View):
+
     def get(self, request, pk, *args, **kwargs):
         """
         获取单个 任务版本列表

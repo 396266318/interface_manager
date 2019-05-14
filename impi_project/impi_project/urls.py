@@ -22,10 +22,17 @@ from interface_app.views.interface.interface_list_views import InterfaceListView
 from interface_app.views.interface.interface_detail_views import InterfaceDetailViews
 from interface_app.views.service.service_interface_detail_views import ServiceInterfaceDetailViews
 from interface_app.views.debug.debug_list_views import DebugListViews
-from interface_app.views.debug.test_list_views import TestListViews
+from interface_app.views.debug.test_list0_views import TestList0Views
+from interface_app.views.debug.test_list1_views import TestList1Views
 from interface_app.views.task.task_detail_views import TaskDetailViews
-from interface_app.views.task.list_views import TaskListViews
+from interface_app.views.task.task_list_views import TaskListViews
 from interface_app.views.task.task_detail_interfaces_views import TaskDetailInterfacesViews
+from interface_app.views.task.task_detail_results_views import TaskDetailVersionResultsViews
+from interface_app.views.task.task_detail_results_views import TaskDetailVersionViews
+from interface_app.views.task.task_detail_runl_views import TaskDetailRunViews
+
+from interface_app.views.mock.mock_list_views import MockListViews
+from interface_app.views.mock.mock_detail_views import MockDetailViews, run_mock
 
 
 urlpatterns = [
@@ -40,9 +47,20 @@ urlpatterns = [
     path('backend/interfaces/<int:pk>', InterfaceDetailViews.as_view(), name="backend_interfaces"),
 
     path('backend/debug/', DebugListViews.as_view(), name="debug"),
-    path('backend/test/<int:pk>', TestListViews.as_view(), name="test"),
+    path('backend/test0/', TestList0Views.as_view(), name="test0"),
+    path('backend/test1/', TestList1Views.as_view(), name="test1"),
 
-    path('backend/tasks/', TaskListViews.as_views(), name="tasks"),
-    path('backend/tasks/<int:pk>', TaskDetailViews.as_views(), name="backend_tasks"),
-    path('backend/tasks/<int:pk>/interfaces', TaskDetailInterfacesViews.as_views(), name="tasks_interfaces"),
+    path('backend/tasks/', TaskListViews.as_view()),
+    path('backend/tasks/<int:pk>', TaskDetailViews.as_view(), name="backend_tasks"),
+    path('backend/tasks/<int:pk>/interfaces', TaskDetailInterfacesViews.as_view(), name="tasks_interfaces"),
+
+    path('backend/tasks/<int:pk>/versions', TaskDetailVersionViews.as_view()),
+    path('backend/tasks/versions/<int:pk>/results', TaskDetailVersionResultsViews.as_view()),
+
+    path('backend/tasks/<int:pk>/run', TaskDetailRunViews.as_view()),
+
+    path('backend/mocks/', MockListViews.as_view()),
+    path('backend/mocks/<int:pk>', MockDetailViews.as_view()),
+
+    path('backend/mocks/<int:pk>/run', run_mock),
 ]

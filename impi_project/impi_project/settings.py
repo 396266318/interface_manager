@@ -163,7 +163,7 @@ SESSION_COOKIE_HTTPONLY = True  # 是否Session的cookie 只支持http传输（�
 SESSION_COOKIE_AGE = 1209600  # Session的cookie失效日期（2周）（默认）
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False  # 是否关闭浏览器似的Session过期（默认）
 SESSION_SAVE_EVERY_REQUEST = False  # 是否每次请求都保存Session，默认修改之后才保存（默认）
-
+SESSION_COOKIE_SAMESITE = None
 
 LOGGING = {
     'version': 1,

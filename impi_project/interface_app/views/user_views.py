@@ -16,26 +16,16 @@ from interface_app.my_exception import MyException
 
 class UserViews(View):
 
+
+
 	def get(self, request, *args, **kwargs):
-		"""获取单个服务"""
-		token = request.META.get('HTTP_TOKEN', None)
-		if token is None:
-			raise MyException("用户未登录")
+		user = request.user
+		if user.is_authenticated:
+			return common.response_success({"username": user.username, "id": user.id})
 		else:
-			try:
-				session = Session.objects.get(pk=token)
-			except Session.DoesNotExist:
-				raise MyException('session失效')
-			else:
-				user_id = session.get_decoded().get('_auth_user_id', None)
-				if user_id is None:
-					raise MyException("用户id失效")
-				try:
-					user = User.objects.get(pk=user_id)
-				except User.DoesNotExist:
-					raise MyException("用户不存在")
-				else:
-					return common.response_success({"username": user.username, "id": user.id})
+			raise MyException("用户未登录")
+
+
 
 	def post(self, request, *args, **kwargs):
 		"""单个服务"""

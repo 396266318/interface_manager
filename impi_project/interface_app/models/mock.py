@@ -11,7 +11,7 @@ from interface_app.fields.model.object_field import ObjectField
 
 
 class Mock(models.Model, Base):
-    name = models('name', blank=False, default="", max_lebgth=200)
+    name = models.CharField('name', blank=False, default="", max_length=200)
     description = models.TextField('description', blank=True, default="")
     method = models.CharField('method', blank=False, default="get", max_length=120)
     response = ObjectField('response', default={})

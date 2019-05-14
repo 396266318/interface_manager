@@ -9,7 +9,7 @@ from django import forms
 from interface_app.fields.form.object_field import ObjectField
 
 
-class DebugForm(forms.form):
+class DebugForm(forms.Form):
     """
     调试功能的参数检验
     """

@@ -16,7 +16,7 @@ from django.views.generic import View
 from interface_app.my_exception import MyException
 # task 单个获取，删除，修改的接口
 
-class TaskDetailView(View):
+class TaskDetailViews(View):
     def get(self, request, pk, *args, **kwargs):
         """
         获取单个任务的信息
